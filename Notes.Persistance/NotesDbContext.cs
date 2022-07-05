@@ -21,6 +21,7 @@ namespace Notes.Persistance
             builder.ApplyConfiguration(new NoteConfiguration());
             base.OnModelCreating(builder);
         }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var configuration = new ConfigurationBuilder()
